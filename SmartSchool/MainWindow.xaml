@@ -1,0 +1,60 @@
+﻿<Window x:Class="SmartSchool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SmartSchool"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="360" Margin="51,35,0,0" VerticalAlignment="Top" Width="655">
+            <TabItem Header="Schueler">
+                <Grid Background="#FFE5E5E5">
+
+                    <Button x:Name="btnStartSchueler" Content="Start" HorizontalAlignment="Left" Margin="516,274,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.601,1.771" Click="BtnStartSchueler_Click"/>
+                    <TextBox x:Name="txtNameSchueler" HorizontalAlignment="Left" Height="23" Margin="272,119,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="245"/>
+                    <Label Content="Name" HorizontalAlignment="Left" Margin="176,116,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtVornameSchueler" HorizontalAlignment="Left" Height="23" Margin="272,147,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="245" />
+                    <TextBox x:Name="txtEmailSchueler" HorizontalAlignment="Left" Height="23" Margin="272,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="245" />
+                    <TextBox x:Name="txtAbschlussSchueler" HorizontalAlignment="Left" Height="23" Margin="272,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="245" />
+                    <Label Content="Vorname" HorizontalAlignment="Left" Margin="176,144,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Email" HorizontalAlignment="Left" Margin="176,175,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Abschluss (Tage)" HorizontalAlignment="Left" Margin="176,200,0,0" VerticalAlignment="Top"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Lehrer">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btnStartLehrer" Content="Start" HorizontalAlignment="Left" Margin="516,274,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.601,1.771" Click="BtnStartLehrer_Click"/>
+                    <TextBox x:Name="txtNameLehrer" HorizontalAlignment="Left" Height="23" Margin="272,119,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="245" />
+                    <Label Content="Name" HorizontalAlignment="Left" Margin="176,116,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtVornameLehrer" HorizontalAlignment="Left" Height="23" Margin="272,147,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="245" />
+                    <TextBox x:Name="txtEmailLehrer" HorizontalAlignment="Left" Height="23" Margin="272,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="245" />
+                    <TextBox x:Name="txtDienstjahreLehrer" HorizontalAlignment="Left" Height="23" Margin="272,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="245" />
+                    <Label Content="Vorname" HorizontalAlignment="Left" Margin="176,144,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Email" HorizontalAlignment="Left" Margin="176,175,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Dienstjahre" HorizontalAlignment="Left" Margin="176,200,0,0" VerticalAlignment="Top"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Administrator">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="74*"/>
+                        <ColumnDefinition Width="575*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="btnStartAdmin" Content="Start" HorizontalAlignment="Left" Margin="442.298,274,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.601,1.771" Click="BtnStartAdmin_Click" Grid.Column="1"/>
+                    <TextBox x:Name="txtNameAdmin" HorizontalAlignment="Left" Height="23" Margin="198.298,119,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="245"  Grid.Column="1"/>
+                    <Label Content="Name" HorizontalAlignment="Left" Margin="102.298,116,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                    <TextBox x:Name="txtVornameAdmin" HorizontalAlignment="Left" Height="23" Margin="198.298,147,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="245"  Grid.Column="1"/>
+                    <TextBox x:Name="txtEmailAdmin" HorizontalAlignment="Left" Height="23" Margin="198.298,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="245"  Grid.Column="1"/>
+                    <TextBox x:Name="txtAlterAdmin" HorizontalAlignment="Left" Height="23" Margin="198.298,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="245"  Grid.Column="1"/>
+                    <Label Content="Vorname" HorizontalAlignment="Left" Margin="102.298,144,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                    <Label Content="Email" HorizontalAlignment="Left" Margin="102.298,175,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                    <Label Content="Alter" HorizontalAlignment="Left" Margin="102.298,200,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
